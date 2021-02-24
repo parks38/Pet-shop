@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" th:replace="fragments/header :: header">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title> 거래 게시물 목록</title>
+</head>
+<body>
+<div th:replace="fragments/bodyHeader :: bodyHeader"/>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+<!--      todo: 이 헤더를 삭제하면 게시물이 bodyHeader 밑으로 들어간다.-->
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card" >
+                <img class="card-img-top" src="http://placehold.it/500x325" alt="Card image cap">
+                <div class="card-body">
+<!--                    <a class="card-text" th:href="@{/boards/{id} (id=${board.id})}" th:text="${board.name}"> </a>-->
+                    <a class="card-text" hr> 강아지 사료 팔아요</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card" >
+                <img class="card-img-top" src="http://placehold.it/500x325" alt="Card image cap">
+                <div class="card-body">
+                    <a class="card-text"> 무료 분양 합니다.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card" >
+                <img class="card-img-top" src="http://placehold.it/500x325" alt="Card image cap">
+                <div class="card-body">
+                    <a class="card-text"> 강아지 사료 팔아요</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card" >
+                <img class="card-img-top" src="http://placehold.it/500x325" alt="Card image cap">
+                <div class="card-body">
+                    <a class="card-text"> 강아지 사료 팔아요</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
