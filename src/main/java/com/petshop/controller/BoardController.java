@@ -12,7 +12,7 @@ public class BoardController {
         /**
          * todo 전체 게시물을 가져온다.
          */
-        return "/boards";
+        return "/boards/list";
     }
 
     @GetMapping("/boards/{id}")
@@ -20,6 +20,6 @@ public class BoardController {
         /**
          * todo 해당 id의 게시물을 가져온다.
          */
-        return "/item";
+        return "/boards/item";
     }
 }
